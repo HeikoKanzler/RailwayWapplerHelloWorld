@@ -1,0 +1,43 @@
+{
+  "type": "sqlite3",
+  "connection": {
+    "filename": "/HelloWorldDB.sqlite3"
+  },
+  "direct": true,
+  "schema": {
+    "tables": {
+      "users": {
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "primary": true,
+              "unique": false,
+              "nullable": false
+            }
+          },
+          "name": {
+            "db": {
+              "type": "string",
+              "maxLength": 255,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "email": {
+            "db": {
+              "type": "string",
+              "maxLength": 255,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        },
+        "db": {}
+      }
+    },
+    "views": {}
+  }
+}
