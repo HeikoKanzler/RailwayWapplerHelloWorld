@@ -1,0 +1,11 @@
+{
+  "bootstrap5": {
+    "basic": {
+      "headings-font-family": "Barlow:700",
+      "body-tertiary-bg": "",
+      "font-family-base": "Barlow:400",
+      "enable-dark-mode": false
+    },
+    "advanced": {}
+  }
+}
