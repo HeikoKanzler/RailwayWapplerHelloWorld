@@ -35,5 +35,8 @@
   ],
   "activeTarget": "Development",
   "projectType": "web",
-  "extensions": []
+  "extensions": [],
+  "resources": {
+    "providers": {}
+  }
 }

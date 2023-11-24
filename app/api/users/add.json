@@ -7,16 +7,23 @@
     "$_POST": [
       {
         "type": "text",
-        "name": "id"
-      },
-      {
-        "type": "text",
         "fieldName": "name",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
         "name": "name"
       },
       {
         "type": "text",
         "fieldName": "email",
+        "options": {
+          "rules": {
+            "core:required": {},
+            "core:email": {}
+          }
+        },
         "name": "email"
       }
     ]

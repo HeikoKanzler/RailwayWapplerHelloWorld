@@ -7,6 +7,7 @@
 - Merged via pull request, triggered automatic deployment from main
 - Page title change etc. 
 - New list on main page
+- Added SQLite Database, simple form to add data and a API to add and query data
 
 ## What is this about?
 This little project helps understanding the process to create, maintain and deploy Wappler apps to Railway.
