@@ -9,11 +9,11 @@
       "type": "cdn"
     },
     {
-      "name": "bootstrap5",
+      "name": "appConnect",
       "type": "local"
     },
     {
-      "name": "appConnect",
+      "name": "bootstrap5",
       "type": "local"
     }
   ],
@@ -34,5 +34,6 @@
     }
   ],
   "activeTarget": "Development",
-  "projectType": "web"
+  "projectType": "web",
+  "extensions": []
 }
