@@ -1,6 +1,17 @@
+
 # README for RailwayWapplerHelloWorld
 
-## Changes
+### Changes
 - Initial commit
 - Changed paragraph
 - Merged via pull request, triggered automatic deployment from main
+- Page title change etc. 
+
+## What is this about?
+This little project helps understanding the process to create, maintain and deploy Wappler apps to Railway.
+
+## Current process
+- Make changes to development branch(es)
+- Pull Request for merge into main
+- automatic deploy on Railway
+
