@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "users",
+      "module": "dbconnector",
+      "action": "select",
+      "options": {
+        "connection": "DB",
+        "sql": {
+          "type": "select",
+          "columns": [
+            {
+              "table": "users",
+              "column": "id",
+              "recid": 1
+            },
+            {
+              "table": "users",
+              "column": "name",
+              "recid": 2
+            },
+            {
+              "table": "users",
+              "column": "email",
+              "recid": 3
+            }
+          ],
+          "params": [],
+          "table": {
+            "name": "users"
+          },
+          "primary": "id",
+          "joins": [],
+          "query": "select `id`, `name`, `email` from `users`"
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "type": "number",
+          "name": "id"
+        },
+        {
+          "type": "text",
+          "name": "name"
+        },
+        {
+          "type": "text",
+          "name": "email"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "options": {
+      "linkedFile": "/views/index.ejs",
+      "linkedForm": "user"
+    },
+    "$_POST": [
+      {
+        "type": "text",
+        "name": "id"
+      },
+      {
+        "type": "text",
+        "fieldName": "name",
+        "name": "name"
+      },
+      {
+        "type": "text",
+        "fieldName": "email",
+        "name": "email"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "insert",
+      "module": "dbupdater",
+      "action": "insert",
+      "options": {
+        "connection": "DB",
+        "sql": {
+          "type": "insert",
+          "values": [
+            {
+              "table": "users",
+              "column": "name",
+              "type": "text",
+              "value": "{{$_POST.name}}",
+              "recid": 1
+            },
+            {
+              "table": "users",
+              "column": "email",
+              "type": "text",
+              "value": "{{$_POST.email}}",
+              "recid": 2
+            }
+          ],
+          "table": "users",
+          "query": "insert into `users` (`email`, `name`) values (?, ?)",
+          "params": [
+            {
+              "name": ":P1",
+              "type": "expression",
+              "value": "{{$_POST.name}}",
+              "test": ""
+            },
+            {
+              "name": ":P2",
+              "type": "expression",
+              "value": "{{$_POST.email}}",
+              "test": ""
+            }
+          ]
+        }
+      },
+      "meta": [
+        {
+          "name": "identity",
+          "type": "text"
+        },
+        {
+          "name": "affected",
+          "type": "number"
+        }
+      ],
+      "output": true
+    }
+  }
+}
